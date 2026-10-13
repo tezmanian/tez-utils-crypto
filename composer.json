@@ -1,32 +1,40 @@
 {
-    "name": "tez/utils-crypto",
+    "name": "tezmanian/utils-crypto",
     "type": "library",
     "description": "Authenticated AES-GCM encryption for PHP — supports AES-128/192/256-GCM with random nonces, tag verification, and a strict enum-based cipher allowlist. PHP 8.3+, requires ext-openssl.",
+    "keywords": [
+        "crypto",
+        "aes",
+        "aes-gcm",
+        "encryption",
+        "php"
+    ],
+    "homepage": "https://github.com/tezmanian/tez-utils-crypto",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "René Halberstadt",
+            "email": "tezmanian@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/tezmanian/tez-utils-crypto/issues",
+        "source": "https://github.com/tezmanian/tez-utils-crypto"
+    },
     "autoload": {
         "psr-4": {
-            "Tez\\Utils\\Crypto\\": "src/"
+            "Tezmanian\\Utils\\Crypto\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tez\\Utils\\Tests\\Crypto\\": "tests/"
+            "Tezmanian\\Utils\\Tests\\Crypto\\": "tests/"
         }
     },
-    "repositories": [
-  	{
-             "type": "git",
-             "url": "https://gitea.root-zone.info/tez/tez-utils-enum.git"
-        },
-        {
-             "type": "git",
-             "url": "https://github.com/tezmanian/tez-utils-enum.git"
-        }
-    ],
     "require": {
         "php": ">=8.3",
         "ext-openssl": "*",
-        "tez/utils-enum": "^1.0"
+        "tezmanian/utils-enum": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^11.0",

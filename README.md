@@ -1,12 +1,19 @@
 # tez-utils-crypto
 
+[![CI](https://github.com/tezmanian/tez-utils-crypto/actions/workflows/php.yml/badge.svg)](https://github.com/tezmanian/tez-utils-crypto/actions/workflows/php.yml)
+[![Packagist Version](https://img.shields.io/packagist/v/tezmanian/utils-crypto)](https://packagist.org/packages/tezmanian/utils-crypto)
+[![PHP](https://img.shields.io/packagist/php-v/tezmanian/utils-crypto)](https://packagist.org/packages/tezmanian/utils-crypto)
+[![License: MIT](https://img.shields.io/packagist/l/tezmanian/utils-crypto)](LICENSE)
+
 Authenticated AES-GCM encryption for PHP — supports AES-128/192/256-GCM with random nonces, tag verification, and a strict enum-based cipher allowlist. PHP 8.3+, requires `ext-openssl`.
 
 ## Installation
 
 ```bash
-composer require tez/utils-crypto
+composer require tezmanian/utils-crypto
 ```
+
+Package: [`tezmanian/utils-crypto`](https://packagist.org/packages/tezmanian/utils-crypto) · Namespace: `Tezmanian\Utils\Crypto`
 
 ## Components
 
@@ -28,8 +35,8 @@ A fresh random nonce is generated on every `encrypt()` call — identical plaint
 ## Quick start
 
 ```php
-use Tez\Utils\Crypto\AesEncryptionService;
-use Tez\Utils\Crypto\AesCipher;
+use Tezmanian\Utils\Crypto\AesEncryptionService;
+use Tezmanian\Utils\Crypto\AesCipher;
 
 // Generate a 64-character hex key (32 bytes = AES-256)
 $hexKey  = bin2hex(random_bytes(32));
@@ -130,8 +137,17 @@ $service->decrypt('not-base64!!!');
 
 - PHP 8.3+
 - `ext-openssl`
-- `tez/utils-enum` ^1.0
+- [`tezmanian/utils-enum`](https://packagist.org/packages/tezmanian/utils-enum) ^1.0
+
+## Development
+
+```bash
+make build && make install
+make ci   # audit, PHPStan, code style, tests
+```
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
+
+Author: René Halberstadt

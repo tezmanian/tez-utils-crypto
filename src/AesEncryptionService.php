@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tez\Utils\Crypto;
+namespace Tezmanian\Utils\Crypto;
 
 /**
  * Symmetric encryption service using authenticated AES-GCM.

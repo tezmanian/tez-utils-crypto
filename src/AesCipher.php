@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tez\Utils\Crypto;
+namespace Tezmanian\Utils\Crypto;
 
-use Tez\Utils\Enum\BackedEnumTrait;
+use Tezmanian\Utils\Enum\BackedEnumTrait;
 
 /**
  * Allowlist of supported AES-GCM cipher variants.

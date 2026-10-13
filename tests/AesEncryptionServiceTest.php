@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tez\Utils\Tests\Crypto;
+namespace Tezmanian\Utils\Tests\Crypto;
 
 use PHPUnit\Framework\TestCase;
-use Tez\Utils\Crypto\AesCipher;
-use Tez\Utils\Crypto\AesEncryptionService;
+use Tezmanian\Utils\Crypto\AesCipher;
+use Tezmanian\Utils\Crypto\AesEncryptionService;
 
 final class AesEncryptionServiceTest extends TestCase
 {
